@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ！！！注意顺序一定要这样来 ！！！*/
+        /* 一般只使用a:hover */
+        /* 1.表示用户未访问的链接，把没有点击过的链接选出来 */
+        a:link {
+            color: #333000;
+            text-decoration: none;
+        }
+
+        /* 2.表示选择用户点击过的链接 */
+        a:visited {
+            color: pink;
+        }
+
+        /* 3.表示选择鼠标停在的该链接 */
+        a:hover {
+            color: skyblue;
+        }
+
+        /* 4.表示选择用户鼠标点击的链接但鼠标并没有松开 */
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.baidu.com">百度一下</a>
+</body>
+
+</html>
