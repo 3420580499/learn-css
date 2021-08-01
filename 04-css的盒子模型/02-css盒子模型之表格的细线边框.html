@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 300px;
+            height: 200px;
+        }
+
+        td,
+        th {
+            border: 1px solid pink;
+            /* 表示将相邻的边框合并在一起 */
+            border-collapse: collapse;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>cellpadding表示单元格文字与单元格边框的距离</div>
+    <div>cellspacing表示单元格与单元格之间的距离</div>
+    <table align="center" border="1" cellspacing="0" width="250">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小明</td>
+                <td>18</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td>小红</td>
+                <td>21</td>
+                <td>女</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
