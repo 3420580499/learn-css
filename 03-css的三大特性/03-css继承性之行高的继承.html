@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: 12px/1.5 fantasy;
+            color: skyblue;
+        }
+
+        /* 子元素继承了父元素body 的行高1.5 */
+        /* 这个1.5就是当前元素文字大小 font-size 的1.5倍 所以当前div的行高是20*1.5=30px */
+        div {
+            font-size: 20px;
+        }
+
+        /* 此处也是一样的 */
+        /* 子元素可以根据自己的文字大小自动调整行高 */
+        p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>看我，看我</div>
+    <p>做人如果没梦想,那跟咸鱼有什么分别啊</p>
+</body>
+
+</html>
