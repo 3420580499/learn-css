@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            background-color: skyblue;
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            overflow: hidden;
+        }
+
+        .son {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 2.嵌套块元素垂直外边距的塌陷 -->
+    <!-- 对于两个嵌套关系（父子关系）的块元素，父元素有上外边距同时子元素也有上外边距，
+    此时父元素会塌陷较大的外边距值 -->
+    <!-- 
+        解决方案：
+        1.可以为父元素定义上边框
+        2.可以为父元素定义上内边距
+        3.可以为父元素添加overflow：hidden 
+    -->
+    <div class="father">
+        <div class="son">
+
+        </div>
+    </div>
+</body>
+
+</html>
