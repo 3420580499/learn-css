@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 如果多个盒子都设置了浮动，则他们会按照属性值一行内显示并且顶端对齐排列 */
+        /* 浮动的元素使互相贴在一起的（不会有间隙），如果父级宽度装不下这些盒子，则会另起一行 */
+        .one {
+            float: left;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+
+        .two {
+            float: left;
+            background-color: yellow;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">看我，看我</div>
+    <div class="two">看这，看这</div>
+</body>
+
+</html>
