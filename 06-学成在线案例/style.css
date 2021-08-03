@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
 }
-.body {
-    background-color: #f5f5f5;
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #f3f5f7;
+    /* height: 4000px; */
 }
 .have {
     width: 1200px;
@@ -81,3 +85,223 @@ li {
     height: 42px;
     line-height: 42px;
 }
+.body-one {
+    height: 421px;
+    background-color: #1c036c;
+}
+.body-two {
+    /* background-color: pink; */
+    height: 421px;
+    background-image: url(../img/banner2_20190819_210028.png) ;
+}
+.subnav{
+    float: left;
+    width: 190px;
+    height: 421px;
+    background: rgba(0,0,0,.3);
+}
+.subnav ul li {
+    /* margin: 0 20px; */
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px;
+}
+.subnav ul li a{
+   font-size: 14px;
+   color: #fff;
+}
+.subnav ul li a span{
+   float: right;
+}
+.subnav ul li a:hover{
+    color: blue ;
+}
+.course {
+    /* 浮动的元素不会有外边距合并问题 */
+    margin-top: 50px;
+    float: right;
+    width: 230px;
+    height: 300px;
+    /* background-color: pink; */
+    background-color: #fff;
+}
+.course h2 {
+    height: 48px;
+    background-color: skyblue;
+    line-height: 48px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+.course .bd{
+    padding: 0 20px;
+}
+.course .bd ul li {
+    padding:  14px 0;
+    border-bottom: 1px solid #ccc;
+}
+.course .bd ul li h4{
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.course .bd ul li p{
+    font-size: 12px;
+    color:#a5a5a5;
+}
+.course .bd .all{
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    font-weight: 700;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+}
+.like {
+    /* background-color: pink; */
+    margin-top: 10px;
+    height: 60px;
+    /* 行高会继承给子元素 */
+    line-height: 60px;
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, .1);
+}
+.like h4{
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+.like ul {
+    float: left;
+    margin-left: 30px;
+}
+.like ul li {
+   float: left;
+}
+.like ul li a {
+   padding: 0 15px;
+   font-size: 16px;
+   color: #050505;
+   border-left: 1px solid #ccc;
+}
+.like .last{
+    float: right;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+.like ul li a:hover {
+    color: blue;
+}
+.box {
+    margin-top: 30px;
+}
+.box .box-head {
+    background-color: #f5f5f5;
+    height: 45px;
+}
+.box .box-head h3{
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    
+}
+.box .box-head a{
+    float: right;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-right:30px;
+    color: #a5a5a5;
+}
+.box .box-head a:hover {
+    color: blue;
+}
+.box .box-body ul {
+    width: 1225px;
+}
+.box .box-body ul li img{
+    width: 100%;
+}
+.box .box-body ul li{
+    background-color: #f5f5f5;
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.box .box-body ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+.box .box-body ul li .info{
+    font-size: 12px;
+    margin: 0 20px 0px 25px;
+}
+.box .box-body ul li .info span {
+    color:  #ff7c2d;
+}
+/*双伪元素方式(清除浮动) */
+.clearfix::before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    /* IE6,7专用 */
+    *zoom: 1
+}
+.end {
+    background-color:#f5f5f5;
+    height: 415px;
+}
+.end .have {
+    padding-top: 35px;
+}
+.end .have .left {
+    float: left;
+}
+.end .have .left p {
+    font-size: 12px;
+    color: #666;
+    margin: 20px 0 15px 0;
+}
+.app {
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 33px;
+    color: #00a4ff;
+    font-size: 16px;
+}
+.end .have .links {
+    float: right;
+    
+}
+.end .have .links dl {
+    float: left;
+    margin-left: 100px;
+}
+.end .have .links dl dd a {
+    color: #333;
+    font-size: 12px;
+}
+.end .have .links dl dd a:hover {
+    color: blue;
+}
+.end .have .links dl dt {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
