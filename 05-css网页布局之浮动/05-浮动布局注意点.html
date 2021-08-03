@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            /* float: left; */
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+        }
+
+        .two {
+            float: left;
+            background-color: yellow;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1.先用标准流的父元素排列上下位置，之后内部子元素采取浮动排列左右位置 -->
+    <!-- 2.浮动的盒子只会影响浮动盒子后面的标准流，不会影响前面的标准流 -->
+    <!-- 即如果第一个盒子不浮动，第二个盒子浮动,那么因为第一个盒子独占一行，所以第二个浮动的盒子排在第二行 -->
+</body>
+<div class="one"></div>
+<div class="two"></div>
+
+</html>

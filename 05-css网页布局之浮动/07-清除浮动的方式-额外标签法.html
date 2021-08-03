@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one,
+        .two {
+            float: left;
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+
+        .three {
+            background-color: black;
+            height: 200px;
+        }
+
+        .method {
+            /* 额外标签法会在浮动元素末尾添加一个空的标签 */
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="one">熊大</div>
+        <div class="two">熊二</div>
+        <div class="method"></div>
+    </div>
+    <div class="three">
+
+    </div>
+</body>
+
+</html>

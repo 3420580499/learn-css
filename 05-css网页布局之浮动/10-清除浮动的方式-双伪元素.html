@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one,
+        .two {
+            float: left;
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+
+        .three {
+            background-color: black;
+            height: 200px;
+        }
+
+        /*双伪元素方式 */
+        .clearfix::before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            /* IE6,7专用 */
+            *zoom: 1
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <div class="one">熊大</div>
+        <div class="two">熊二</div>
+    </div>
+    <div class="three">
+
+    </div>
+</body>
+
+</html>
