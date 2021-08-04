@@ -220,7 +220,12 @@ li {
 .box .box-body ul {
     width: 1225px;
 }
-.box .box-body ul li img{
+.box .box-body ul li em {
+    position:absolute;
+    top: 4px;
+    right: -4px;
+}
+.box .box-body ul li>img{
     width: 100%;
 }
 .box .box-body ul li{
@@ -230,6 +235,7 @@ li {
     height: 270px;
     margin-bottom: 15px;
     margin-right: 15px;
+    position: relative;
 }
 .box .box-body ul li h4 {
     margin: 20px 20px 20px 25px;
