@@ -7,11 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>绝对定位水平垂直居中</title>
     <style>
+        /* 固定定位也可以采用类似方法 */
+        /* 相对定位不会脱标（脱标就是不是标准流了），所以只需要设置margin：0 auto就可以 */
         .box {
             position: absolute;
             /* 1. left 走 50%  父容器宽度的一半 */
             left: 50%;
             /* 2. margin 负值 往左边走 自己盒子宽度的一半 */
+            /* 如果是margin-top就是往上走，但是bottom和right就不是了 */
             margin-left: -100px;
             top: 50%;
             margin-top: -100px;
