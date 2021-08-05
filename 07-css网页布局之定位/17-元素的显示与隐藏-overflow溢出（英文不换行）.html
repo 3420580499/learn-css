@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 定位的盒子，请慎用overflow：hidden,因为他会隐藏多余的部分 */
+        .one {
+            /* 溢出的部分隐藏 */
+            /* overflow: hidden; */
+            /* 溢出的部分也显示 */
+            /* overflow: visible; */
+            /* 显示滚动条（没有溢出也会显示滚动条） */
+            /* overflow: scroll; */
+            /* 只有溢出的时候才会显示滚动条 */
+            /* overflow: auto; */
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 解决英文不换行问题 */
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <!-- 中文会自动换行 -->
+        <!-- 靠的就是卡了就是打开链接雷锋精神多 -->
+        <!-- 英文不自动换行是因为他把整个一行英文看成一个单词了 -->
+        kdjlksjlkjlskdjflksjdfksjdkfjskldfjsdfkjdkdsfsafsfd
+    </div>
+</body>
+
+</html>
