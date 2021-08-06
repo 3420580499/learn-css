@@ -72,18 +72,16 @@ li {
 }
 .user {
     float: left;
+    line-height: 42px;
 }
 .user div {
     float: left;
+
 }
 .user div img {
-    padding:5px 0;
-}
-.user span {
-    float: left;
-    display: block;
-    height: 42px;
-    line-height: 42px;
+    /* padding:5px 0; */
+    /* 实现图片可与文字的中线对齐 */
+    vertical-align: middle;
 }
 .body-one {
     height: 421px;
